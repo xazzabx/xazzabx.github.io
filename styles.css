@@ -1,0 +1,104 @@
+	body{
+	background-attachment:fixed;
+	background-color:rgba(200,40,20,.8);
+	margin:0;
+	}
+	#map{
+		height:400px;
+		width:80%;
+		margin:auto;
+		background-color: grey;
+	}
+	#form{
+		width:50%;
+		margin:auto;
+		padding: 10px 10px 10px 10px;
+		background-color:gray;
+		border-radius:50px;
+	}
+	
+	form input{
+		border-radius:5px;
+		border-style:none;
+		padding: 0 5px 0 5px;
+	}
+	form label{
+		
+		font-family:"Arial Black",serif;
+	}
+	
+	#submit{
+		padding:2px;
+		font-family: "Arial Black", serif;
+	}
+	div{
+		margin:auto;
+	}
+	p {
+		width:auto;
+		margin:auto;
+	}
+	img{
+		display:block;
+	}
+	.text{
+		color: #000;
+		font-size: 40pt;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		margin:auto;
+		font-family:"Trebuchet MS";
+	}
+	.mySlideShow{
+		position:relative;
+		margin:auto;
+		width:100%;
+		top:0;
+	}
+	.slideImage{
+		width:100%;
+	}
+	
+	.sidenav{
+	height:100%;
+	width:125px;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-image:url(images/tools.png);
+	overflow-x: hidden;
+	padding-top:150px;
+	transition:0.5s;
+	}
+	.sidenav a {
+	padding:30px 0px 30px 0px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	text-shadow:black 4px 4px 4px;
+	display: block;
+	transition: 0.3s;
+	
+	text-align:center;
+	}
+	.sidenav a:hover{
+	color:red;
+	}
+	
+	#copyright{
+		color:black;
+		width:inherit;
+		bottom:0;
+		position:relative;
+		text-align:center;
+	}
+	
+	#main{
+		margin-left:125px;
+		text-align:center;
+	}
+
+
+

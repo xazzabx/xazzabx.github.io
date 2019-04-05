@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<title> Advanced Windows </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+</HEAD>
+
+
+
+<BODY onload="showSlides()">
+<!-- [Start of Sidebar] -->
+	
+	<div id="mySidebar" class="sidenav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="services.html">Services</a>
+		<a href="contact.html">Contact</a>
+	</div>
+<!-- [End of Sidebar] -->
+	
+<!-- [Start of Main] Content Will Be Pushed when Nav is Shown -->
+
+	<div id="main">
+		<div class="mySlideShow">
+	
+			<div class="mySlides">
+				<img class="slideImage" src="images/rating.png" style="height:150px;">
+				<div class="text"> Advanced Windows </div>
+			</div>
+			
+			<div class="mySlides">
+				<img class="slideImage" src="images/Wilder-Mansiont.png" style="height:150px;">
+				<div class="text"> Advanced Windows </div>
+			</div>
+
+		</div>
+		<!-- End of SlideShow -->
+		
+		
+		<br>
+		<span style="font-size:30pt"> You May Email Us at <a href="mailto:contact@advancedwindows.com">contact@advancedwindows.com</a> or use the form below.
+		</span>
+		<div style="margin-top:50px" id=form>
+		<form>
+			<label> Name:</label>
+			<input id="name" type="text" placeholder="e.g. John Smith" required=true></input>
+			<br>
+			<label> Email:</label>
+			<input id="email"  type="text" placeholder="e.g. awindows@hotmail.com" required=true></input>
+			<br>
+			<label> Title:</label>
+			<input id="title" type="text" required=true></input>
+			<br>
+			<label style="margin-right:0;float:left;"> Body:</label>
+			<textarea style="resize:none; height:300px; width:70%;marign-left:0;" id="body" required=true cols="50" rows="5"></textarea>
+			<input style="width: 100px; height:50px; id="submit" type="submit" value="Send"></input>
+		
+		</form>
+		</div>
+		<script>
+		document.getElementById("submit").onclick = function(){
+		
+		
+		var name = document.getElementById("name").value;
+		var mail = document.getElementById("email").value;
+		var title = document.getElementById("title").value;
+		var body = document.getElementById("body").value;
+		if(name != "" && mail != "" && title != "" && title != "" && body != ""){
+		var message = "Thank you, " + name + "!\n" + "Your message has been sent!\n\n" + "Title: " + title + "\n\nMessage:\n" + body;
+		alert(message);
+		}
+		
+		}
+		
+		
+		</script>
+	
+		<div id="copyright"><h5>&copy; Advanced Windows 2019</h5></div>
+	</div>
+<!-- [End of Main] -->
+	
+</BODY>
+
+
+</HTML>

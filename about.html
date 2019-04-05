@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<title> Advanced Windows </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+</HEAD>
+
+
+
+<BODY onload="showSlides()">
+<!-- [Start of Sidebar] -->
+	
+	<div id="mySidebar" class="sidenav">
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="services.html">Services</a>
+		<a href="contact.html">Contact</a>
+	</div>
+<!-- [End of Sidebar] -->
+	
+<!-- [Start of Main] Content Will Be Pushed when Nav is Shown -->
+
+	<div id="main">
+		<div class="mySlideShow">
+	
+			<div class="mySlides">
+				<img class="slideImage" src="images/rating.png" style="height:150px;">
+				<div class="text"> Advanced Windows </div>
+			</div>
+			
+			<div class="mySlides">
+				<img class="slideImage" src="images/Wilder-Mansiont.png" style="height:150px;">
+				<div class="text"> Advanced Windows </div>
+			</div>
+
+		</div>
+		<!-- End of SlideShow -->
+		
+		
+	<div id="map"></div>
+	
+	<span> Location: 105 Heath Croft Road, Sutton Coldfield B75 6NH </span>
+	<br>
+	<br>
+	<span style="font-size:30pt;">Established in 1986, Advanced Windows has been working hard to serve with expertise in mind. Comprising on 3 members. this small family business has managed to make a name for itself in the local area </span>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 52.5852600, lng: -1.8086000};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd5e33jHZWHDSdFDFlNtqd6By-AeWaVXE&callback=initMap">
+    </script>
+	
+		<div id="copyright"><h5>&copy; Advanced Windows 2019</h5></div>
+	</div>
+<!-- [End of Main] -->
+	
+</BODY>
+
+
+</HTML>
